@@ -88,7 +88,9 @@ namespace Sitecore.Support.Pipelines.Save
                     if (!link.SourceFieldID.IsNull)
                     {
                         builder.Append("<tr>");
-                        builder.Append("<td style='width:70px;vertical-align:top;padding-bottom:5px;padding-right:5px;'>");
+                        #region modified part of code - a new css class has been added insted of hardcoded css styles to ease css changes
+                        builder.Append("<td class='scSupportBrokenLinkName'>");
+                        #endregion
                         if (item.Fields.Contains(link.SourceFieldID))
                         {
                             builder.Append(item.Fields[link.SourceFieldID].DisplayName);

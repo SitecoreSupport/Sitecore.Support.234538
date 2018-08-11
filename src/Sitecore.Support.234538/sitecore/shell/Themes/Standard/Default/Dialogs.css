@@ -44,6 +44,15 @@
     word-break: break-word; /* Chrome */
 }
 
+/*fix issue 234538*/
+.scSupportBrokenLinkName {
+    width: 100% !important;
+    vertical-align:top;
+	padding-bottom:5px;
+	padding-right:5px;
+}
+/*end of fix*/
+
 .scDialogContentContainer {
     width: 100%;
     padding: 15px;
